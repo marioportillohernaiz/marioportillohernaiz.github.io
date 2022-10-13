@@ -42,6 +42,15 @@
 	$(window).on("load", function (){
 		$(".loader-wrapper").fadeOut("medium");
 	});
+	
+	function checkforinput() {
+		if (document.getElementById("name").value.length == 0 || document.getElementById("email").value.length == 0 || 
+		document.getElementById("subject").value.length == 0 || document.getElementById("message").value.length == 0) {
+			alert("Fields are empty");
+		} else {
+			document.getElementById("response").style.display = "block";
+		}
+	}
 </script>
 
 <main>
