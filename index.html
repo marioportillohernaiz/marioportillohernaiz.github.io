@@ -88,14 +88,15 @@
 				
 				<form class="gform" action="https://script.google.com/macros/s/AKfycbwtsqE0m8fLkII-peBOa4ide9npTjwWg1Hxpei0HTlUIgq9iNjijeAejnYEQtp6PSiAwQ/exec" 
 					method="POST" data-email="portillomario407@gmail.com">
-				<div class="col-25"><p class="mb-1">* Name</p></div>
-				<div class="col-75"><input type="text" name="name" size="37" class="mb-1" id="name"></div>
-				<div class="col-25"><p class="mb-1">* E-mail Address</p></div>
-				<div class="col-75"><input type="text" name="email" size="37" class="mb-1" id="email"></div>
-				<div class="col-25"><p class="mb-1">* Subject</p></div>
-				<div class="col-75"><input type="text" name="subject" size="37" class="mb-1" id="subject"></div>
-				<div class="col-25"><p class="mb-1">* Message</p></div>
-				<div class="col-75"><textarea name="message" rows="4" cols="40" id="message"></textarea></div>
+				<p class="mb-1">* Name</p>
+				<input type="text" name="name" size="37" id="name" style="width: 100%;"> <!--placeholder="Your name"-->
+				<p class="mb-1">* E-mail Address</p>
+				<input type="text" name="email" size="37" id="email" style="width: 100%;">
+				<p class="mb-1">* Subject</p>
+				<input type="text" name="subject" id="subject" style="width: 100%;">
+				<p class="mb-1">* Message</p>
+				<textarea name="message" rows="4" id="message" style="width: 100%;"></textarea>
+				<p class="text-muted">* Required fields</p>
 				<p class="text-muted">* Required fields</p>
 
 				<input type="submit" value="Send" onclick="checkforinput()" class="mb-2" style="padding: 3px 10px;border-radius: 8px;border-color:grey;">
