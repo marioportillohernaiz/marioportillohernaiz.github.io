@@ -21,16 +21,6 @@
 }
 /*^^*/
 
-/*SCREEN RESPONSE*/
-@media screen and (max-width: 600px) {
-  .col-25, .col-40, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-/*^^*/
-
-
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
