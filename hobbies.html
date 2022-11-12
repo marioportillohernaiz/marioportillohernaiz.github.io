@@ -79,27 +79,112 @@
 
 
 <div class="container py-4">
-<h2 class="pb-1">Photography</h2>
-<div class="p-4 bg-light border rounded-3">
-	<p>Before filming videos, I started taking photos for fun. After a few years trying things out, I made quite an improvement in my photography
-	skills. Then during my first year at university I was able to meet incredible people, one of which was a rapper. He wanted to look more professional, 
-	so he asked me for a photoshoot. It ended up being a great photoshoot and he used my pictures on his Spotify artist profile.</p>
-	<a href="https://open.spotify.com/artist/1SUBvlAyHAit8nUNONyLYH?si=Rc2hWMKAQGSZuarQ_q9xRw" target="_blank"><img src="nigel.JPG" width=65% height=auto></a>
+<h2 class="pb-1">Photography and Filmmaking</h2>
+<div class="p-4 mb-5 bg-light border rounded-3">
+	<h4>"Marcus RG"</h4>
+	<p>Marcus RG is my photography/filmmaking name. A few years ago, 
+	I started taking photos and videos for fun. After a few years of practice, my skills in photography and videography improved. Since then, I've been able 
+	to meet incredible people and collaborate with them by helping them create content or build up their protfolio more professionally. Additionally, I create
+	my own content either on <a href="https://www.youtube.com/channel/UC8gLkUD9lFQMcxHmzY_A4-Q" target="_blank">YouTube</a> or 
+	<a href="https://www.instagram.com/marcus_rg_" target="_blank">Instagram</a>.</p>
 </div>
 
-<h2 class="pb-1 pt-3">Filmmaking</h2>
-<div class="p-4 mb-4 bg-light border rounded-3">
-	<h4>"Marcus RG"</h4>
-	<p><a href="https://www.youtube.com/channel/UC8gLkUD9lFQMcxHmzY_A4-Q" target="_blank">Marcus RG</a> is my photography/filmmaking name. Filmming and 
-	editing videos has been my hobby since my photography skills started getting good. Recently I've been able to colaborate with people in their projects 
-	and also create a few filming projects for myself. One of which is shown below.</p>
-	<a href="https://youtu.be/KX3yup43_aE" target="_blank"><img src="aesthete.JPG" width=65% height=auto></a>
+<div class="row pb-2">
+	<div class="col-lg-6" onclick="displayphoto()">
+		<div class="p-3 mb-4 bg-light border rounded-3 text-center shadow">
+			<h4 class="fw-normal">Photography</h4>
+
+		</div>
+	</div>
+	<div class="col-lg-6" onclick="displayvideo()">
+		<div class="p-3 mb-4 bg-light border rounded-3 text-center shadow">
+			<h4 class="fw-normal">Videography</h4>
+
+		</div>
+	</div>
+</div>
+<div id="photo" style="display:none;">
+	<div class="row pb-2">
+		<div class="col-lg-4">
+			<div class="p-3 mb-4 bg-light border rounded-3">
+				<h4 class="fw-normal text-center mb-4">Portrait Photography</h4>
+				<a href="https://www.instagram.com/p/CkBglf9MzPA/?utm_source=ig_web_copy_link" target="_blank"><img src="photo1.PNG" width=100% height=auto></a>
+				<p class="mb-1 mt-4">My main photography area involves taking portrait pictures of people for them to use on their professional accounts, such as LinkedIn.</p>
+			</div>
+		</div>
+		<div class="col-lg-4">
+			<div class="p-3 mb-4 bg-light border rounded-3">
+				<h4 class="fw-normal text-center mb-4">Product Photography</h4>
+				<a href="https://www.instagram.com/p/CkDsRwhMFKW/?utm_source=ig_web_copy_link" target="_blank"><img src="photo2.PNG" width=100% height=auto></a>
+				<p class="mb-1 mt-4">From time to time I get the opportunity to take pictures of products which are then advertised on the company's social media.</p>
+			</div>
+			
+		</div>
+		<div class="col-lg-4">
+			<div class="p-3 mb-4 bg-light border rounded-3">
+				<h4 class="fw-normal text-center mb-4">Other</h4>
+				<a href="https://open.spotify.com/artist/1SUBvlAyHAit8nUNONyLYH?si=Rc2hWMKAQGSZuarQ_q9xRw" target="_blank"><img src="photo3.PNG" width=100% height=auto></a>
+				<p class="mb-1 mt-4">Other photography shoots that I've collaborated in include Nightclub photography or building up the portfolio of small known singers.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="video" style="display:none;">
+	<div class="row pb-2">
+		<div class="col-lg-6 px-5">
+			<div class="p-3 mb-4 bg-light border rounded-3">
+				<h4 class="fw-normal text-center mb-4">Personal Films</h4>
+				<a href="https://youtu.be/uDR9ONZ6QqA" target="_blank"><img src="video1.PNG" width=100% height=auto></a>
+				<p class="mb-1 mt-4"></p>
+			</div>
+		</div>
+		<div class="col-lg-6 px-5">
+			<div class="p-3 mb-4 bg-light border rounded-3">
+				<h4 class="fw-normal text-center mb-4">Customer Films</h4>
+				<a href="https://youtu.be/KX3yup43_aE" target="_blank"><img src="video2.PNG" width=100% height=auto></a>
+				<p class="mb-1 mt-4"></p>
+			</div>
+		</div>
+	</div>
 </div>
 </div>
 </main>
-	
 
-<div class="container">
+<script>
+	function displayphoto(){
+		var video = document.getElementById("video");
+		var photo = document.getElementById("photo");
+		
+		if (photo.style.display === "none" && video.style.display === "none") {
+			photo.style.display = "block";
+		} else {
+			if (video.style.display === "block") {
+				photo.style.display = "block";
+				video.style.display = "none";
+			} else {
+				photo.style.display = "none";
+			}
+		  }
+	}
+
+	function displayvideo(){
+		var video = document.getElementById("video");
+		var photo = document.getElementById("photo");
+		
+		if (photo.style.display === "none" && video.style.display === "none") {
+			video.style.display = "block";
+		} else {
+			if (photo.style.display === "block") {
+				video.style.display = "block";
+				photo.style.display = "none";
+			} else {
+				video.style.display = "none";
+			}
+		}
+	}
+</script>
 <div class="container">
 <footer class="d-flex flex-wrap justify-content-between align-items-center py-1 my-3">
 	<ul class="nav col-md-4 justify-content-left list-unstyled d-flex">
