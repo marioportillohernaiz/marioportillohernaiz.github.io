@@ -1,3 +1,102 @@
+.mainColor {
+	background-color: #E4D9FF; /*E4D9FF - 9DD9D2 5B5F97 B2CEDE*/
+}
+
+.secColor {
+	background-color: #FAFAFF;
+}
+
+* {font-family: "Montserrat";}
+
+.inputs {
+	margin-bottom: 1.25rem;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #A6A6A6;
+	background-color: #FAFAFF;
+}
+
+.divOutline {
+	box-shadow: 10px 10px #D9D9D9;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+}
+
+.education {
+	padding: 20px;
+	margin: 25px 80px;
+}
+
+.projects {
+	padding: 20px;
+	margin: 25px 30px;
+}
+
+.hobbies {
+	padding: 20px;
+	margin: 25px 100px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+}
+
+.activelink {
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 6px;
+}
+
+
+.navHover a:hover {
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 6px;
+	text-decoration-color: #FAFAFF;
+	color: #FAFAFF;
+}
+.navHover button:hover {
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 6px;
+	text-decoration-color: #FAFAFF;
+	color: #FAFAFF;
+}
+
+li {
+	list-style-type: square;
+}
+
+.separateContent {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.hoverButt:hover {
+	transform: scale(1.1);
+	transition-duration: 0.4s;
+}
+
+.pageImg {
+	height: auto;
+	margin-left: auto;
+	margin-right: 0;
+	padding-bottom: 0;
+}
+
+.pageTitle {
+	text-align: left;
+	align-self: center;
+}
+
+.divTitle {
+	font-size: 24px;
+	line-height: 32px;
+}
+
+
 /*LOADING SCREEN*/
 .loader {
   border: 16px solid #e6e6e6;
@@ -21,6 +120,7 @@
 }
 /*^^*/
 
+/*NAV MOBILE ICON*/
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -29,12 +129,6 @@
     user-select: none;
 }
 
-.bi {
-  vertical-align: -.125em;
-  fill: currentColor;
-}
-
-/*PHONE NAV*/
 #hamburger-icon {
 	margin: auto 0;
 	display: none;
@@ -68,7 +162,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: white;
+  background-color: #FAFAFF;
+  overflow: hidden;
 }
 
 .mobile-menu {
@@ -79,26 +174,53 @@
   height: calc(100vh - 50px);
   width: 100%;
 }
+/*^^*/
 
-.hoverButt:hover {
-	transform: scale(1.1);
-	transition-duration: 0.4s;
-}
-
-/*SCREEN RESPONSE*/
-@media only screen and (max-width: 600px) {
-  img {
-    width: 100%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-  }
- 
-  header nav {
+/* SCREEN RESPONSE */
+@media only screen and (max-width: 768px) {  
+  
+  header .navhide {
 	  display: none;
   }
   
   #hamburger-icon {
     display: block;
+  }
+  
+  .title {
+	font-size: 18px;
+  }
+  
+  .pageTitle{
+	  display: flex;
+	  text-align: center;
+	  justify-content: center;
+	  align-items: center;
+	  padding-bottom: 50px;
+	  padding-top: 50px;
+  }
+  
+  .pageImg {
+	  display: none;
+  }
+  
+  .projects {
+	padding: 20px;
+	margin: 25px;
+  }
+  
+  .education {
+	padding: 20px;
+	margin: 25px;
+  }
+  
+  .hobbies {
+	padding: 20px;
+	margin: 20px;
+  }
+  
+  .divTitle {
+	font-size: 20px;
+	line-height: 28px;
   }
 }
