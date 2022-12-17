@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<!-- Google tag (gtag.js) --> 
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9RW0HZ4YKF"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+
+  		gtag('config', 'G-9RW0HZ4YKF');
+	</script>
+	  
+	<!-- Required meta tags-->
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <title>Mario Portillo Hernaiz</title>
+	<link rel="icon" type="image/x-icon" href="MPH.png">
+	
+	<!-- TailWind CSS -->
+	<script src="https://cdn.tailwindcss.com"></script>
+	
+	<!-- JQuerry -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	
+	<!-- Personal CSS -->
+	<link href="mph.css" rel="stylesheet" >
+	
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  </head>
+  
+<body class="separateContent">
+<div class="loader-wrapper">
+	<img src="gif-transparent.gif" class="md:w-1/4 max-sm:w-full h-auto">
+</div>
+<script>
+	$(window).on("load", function (){
+		$(".loader-wrapper").fadeOut("fast");
+	});
+</script>
+
+<main>
+<div class="w-full mainColor">
+	<header class="py-5 flex items-stretch place-content-end p-10 navHover  max-sm:pr-1">
+		<div id="hamburger-icon" onclick="toggleMobileMenu(this)" class="pr-10">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+			<ul class="mobile-menu">
+				<li class="py-4"><a href="index.html">Home</a></li>
+				<li class="py-4"><a href="#">Experience and Education</a></li>
+				<li class="py-4"><a href="achievement.html">Achievements</a></li>
+				<li class="py-4"><a href="hobbies.html">Hobbies</a></li>
+				<li class="py-4"><a href="CV Mario Portillo Hernaiz.pdf.pdf" target="_blank">CV</a></li>
+			</ul>
+		</div>
+		<div class="navhide">
+			<a href="index.html" class="px-4">Home</a>
+			<a href="#" class="px-4 activelink">Experience and Education</a>
+			<a href="achievement.html" class="px-4">Achievements</a>
+			<a href="hobbies.html" class="px-4">Hobbies</a>
+			<a href="CV Mario Portillo Hernaiz.pdf.pdf" class="px-4" target="_blank">CV</a>
+		</div>
+		<script>
+			function toggleMobileMenu(menu) {
+				menu.classList.toggle('open');
+			}
+		</script>
+	</header>
+</div>
+
+<div class="w-ful mainColor">
+	<div class="grid grid-cols-1 md:grid-cols-3">
+		<div class="px-5 flex-1">
+			<img class="pageImg" src="img/expedu.png" style="width:230px;">
+		</div>
+		<div class="px-5 flex-1 col-span-2 flex">
+			<h1 class="max-sm:text-4xl md:text-5xl font-bold tracking-wide pageTitle">Experience & Education</h1>
+		</div>
+	</div>
+	
+	<div class="flex items-center justify-center py-4 navHover">
+		<button class="max-sm:px-3 md:px-5 activelink" id="empButton" onclick="displayData('1')">Employment</button>
+		<button class="max-sm:px-3 md:px-5" id="eduButton" onclick="displayData('2')">Education</button>
+		<button class="max-sm:px-3 md:px-5" id="intButton" onclick="displayData('3')">Internships</button>
+	</div>
+</div>
+
+
+<div class="w-ful secColor">
+	
+	<div id="employment" style="display:block;" class="md:p-10">
+		<div class="divOutline education">	
+			<div class="flex">
+				<p class="divTitle flex-1 font-bold">Free Lance Project - All City Cleaning</p>
+				<p class="flex-1 max-sm:text-right">3 Months - 2022</p>
+			</div>
+			<ul class="pl-5 py-4">
+				<li>Contributed directly towards the digital transformation and early development of a cleaning company.</li>
+				<li>My task consisted of creating a personalised loading screen which would be displayed when a page A loads onto 
+				a page B.</li>
+			</ul>
+		</div>
+		<div class="divOutline education">
+			<div class="flex">
+				<p class="divTitle flex-1 font-bold">Student Ambassador</p>
+				<p class="flex-1 max-sm:text-right">2 Months - 2022</p>
+			</div>
+			<p>Student Ambassador for Open Days at Loughborough University.</p>
+			<ul  class="pl-5 py-4">
+				<li>Part of the accommodation team.</li>
+				<li>Responsible for talking with prospective students and touring them around the accommodation.</li>
+				<li>Recommending and comparing the different accommodations around campus.</li>
+			</ul>
+		</div>
+		<div class="divOutline education">
+			<div class="flex">
+				<p class="divTitle flex-1 font-bold">Assistant and Maintenance Surveyor at HS2</p>
+				<p class="flex-1 max-sm:text-right">3 Months - 2021</p>
+			</div>
+			<p>Dragados - Geocisa UK</p>
+			<ul  class="pl-5 py-4">
+				<li>Maintaining and updating software databases used to track movement from the Victoria Line underground station</li>
+				<li>Installing and maintaining gateways, comm and power boxes that manage automatic total stations and other real-time monitoring equipment.</li>
+				<li>Setting up and maintaining surveying equipment around the construction site.</li>
+			</ul>
+		</div>
+		<div class="divOutline education">
+			<div class="flex">
+				<p class="divTitle flex-1 font-bold">Coach Assistant</p>
+				<p class="flex-1 max-sm:text-right">3 Years - 2019 to 2022</p>
+			</div>
+			<p>Leander Swimming Club</p>
+			<ul class="pl-5 py-4">
+				<li>Training club swimmers.</li>
+				<li>Overseeing of swimmers' progress helping them to improve their technique and support the coach in different session activities.</li>
+				<li>Development of coaching skills and mentoring.</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="education" style="display:none;" class="md:p-10">
+		<div class="divOutline education">	
+			<div class="flex">
+				<p class="divTitle flex-1 font-bold">Loughborough University</p>
+				<p class="flex-1 max-sm:text-right">2021-Present</p>
+			</div>
+			<ul class="pl-5 py-4">
+				<li>University Student</li>
+				<li>Computer Science degree</li>
+			</ul>
+			<button type="button" class="navHover activelink" onclick="TableDisplay('LoughboroughGrade')">Display Grades</button>
+			<table id="LoughboroughGrade" style="display:none" class="p-5 table-auto">
+				<tr><th style="padding-right:60px">Year</th><th style="padding-right:30px">Classification</th></tr>
+				<tr><td>First Year</td><td>First-class (1:1)</td></tr>
+			</table>	
+		</div>
+
+		<div class="divOutline education">
+			<div class="flex">
+				<p class="divTitle flex-1 font-bold">Ashcroft Technology Academy</p>
+				<p class="flex-1 max-sm:text-right">2018-2020</p>
+			</div>
+			<ul class="pl-5 py-4">
+				<li>6th Form. Year 12 and 13</li>
+				<li>Maths, Further Maths, Computer Science, Physics</li>
+			</ul>
+					
+			<button type="button" class="navHover activelink" onclick="TableDisplay('AshcroftGradesAS');TableDisplay('AshcroftGradesALevel')">Display Grades</button>
+			<div class="grid md:grid-cols-3">
+				<table id="AshcroftGradesAS" style="display:none" class="flex-1 md:p-5 max-sm:py-5">
+					<tr><th style="padding-right:50px">Advanced Subsidiary Level</th><th>Grade</th></tr>
+					<tr><td>Mathematics</td><td>A</td></tr>
+					<tr><td>Further Mathematics</td><td>B</td></tr>
+					<tr><td>Computer Science</td><td>C</td></tr>
+					<tr><td>Physics</td><td>B</td></tr>
+				</table>
+				<table id="AshcroftGradesALevel" style="display:none" class="col-span-2 flex-1 md:p-5 max-sm:py-3">
+					<tr><th style="padding-right:130px">A Level</th><th>Grade</th></tr>
+					<tr><td>Mathematics</td><td>A</td></tr>
+					<tr><td>Further Mathematics</td><td>C</td></tr>
+					<tr><td>Computer Science</td><td>B</td></tr>
+				</table>
+			</div>
+		</div>
+
+		<div class="divOutline education">	
+			<div class="flex">
+				<p class="divTitle flex-1 font-bold">St Thomas More language college</p>
+				<p class="flex-1 max-sm:text-right">2015-2018</p>
+			</div>
+			<ul class="pl-5 py-4">
+				<li>Secondary Education. Year 9 to 11</li>
+				<li>Maths, Further Maths, Computer Science, Physics, Biology, Chemistry, English, Religious Education, Spanish, French. </li>
+			</ul>
+			<button type="button" class="activelink" onclick="TableDisplay('ThomasGrades')">Display Grades</button>
+			<table id="ThomasGrades" style="display:none" class="p-5">
+				<tr><th style="padding-right:150px">GCSE</th><th style="padding-right:30px">Grade</th></tr>
+				<tr><td>Mathematics</td><td>8</td></tr>
+				<tr><td>Computer Science</td><td>6</td></tr>
+				<tr><td>Physics</td><td>7</td></tr>
+				<tr><td>Chemistry</td><td>6</td></tr>
+				<tr><td>Biology</td><td>6</td></tr>
+				<tr><td>English</td><td>7</td></tr>
+				<tr><td>Religious Education</td><td>6</td></tr>
+				<tr><td>French</td><td>4</td></tr>
+				<tr><td>Further Maths</td><td>B</td></tr>
+				<tr><td>Spanish</td><td>A*</td></tr>
+			</table>
+		</div>
+	</div>
+
+
+	<div id="internships" style="display:none;" class="md:p-10">
+		<div class="divOutline education">		
+			<div class="flex">
+				<p class="divTitle flex-1 font-bold">Arcelormittal</p>
+				<p class="flex-1 max-sm:text-right">July 2019</p>
+			</div>
+			<p>Worked with the Global Assurance Team</p>
+			<ul class="pl-5 py-4">
+				<li>Worked in the audit role at the ‘ArcelorMittal centre of excellence for tools and technologies.</li>
+				<li>Learned about new emerging technologies and artificial intelligence.</li>
+			</ul>
+		</div>
+
+		<div class="divOutline education">	
+			<div class="flex">
+				<p class="divTitle flex-1 font-bold">Dragados (ACS Group)</p>
+				<p class="flex-1 max-sm:text-right">July 2018</p>
+			</div>
+			<p>Worked on the Project Bank Station Capacity Upgrade (TFL project)</p>
+			<ul class="pl-5 py-4">
+				<li>Providing assistance to Station designers and engineering team in the detailed design of the new underground station.</li>
+				<li>Checking for inconsistencies between previous and current plans.</li>
+				<li>Verifying material specifications to be represented in 3D drawings.</li>
+				<li>Gained an in-depth insight into the workings of tunnel building and the engineering role with this type of project.</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<script>
+	function TableDisplay (typeOfTable){
+		const outputTable = document.getElementById(typeOfTable);
+		
+		if (outputTable.style.display === "none"){
+			outputTable.style.display = "block";
+		}
+		else{
+			outputTable.style.display = "none";
+	}}
+	
+	function displayData(table){
+		empButton.classList.remove("activelink");
+		if (table === "1") {
+			employment.style.display = "block";
+			education.style.display = "none";
+			internships.style.display = "none";
+			
+			empButton.classList.add("activelink");
+			eduButton.classList.remove("activelink");
+			intButton.classList.remove("activelink");
+		} else if (table === "2") {
+			employment.style.display = "none";
+			education.style.display = "block";
+			internships.style.display = "none";
+			
+			empButton.classList.remove("activelink");
+			eduButton.classList.add("activelink");
+			intButton.classList.remove("activelink");
+		} else {
+			employment.style.display = "none";
+			education.style.display = "none";
+			internships.style.display = "block";
+			
+			empButton.classList.remove("activelink");
+			eduButton.classList.remove("activelink");
+			intButton.classList.add("activelink");
+		}
+	}
+</script>
+</main>
+
+<div class="w-ful mainColor">
+	<footer class="flex justify-between p-5 navHover">
+		<div class="inline-flex md:px-10">
+			<a href="https://www.linkedin.com/in/marioportillohernaiz/" target="blank"><img class="mr-4" src="img/linkedinicon.png" style="width:40px;height:auto;"></a>
+			<a href="https://github.com/marioportillohernaiz" target="_blank"><img src="img/githubicon.png" style="width:40px;height:auto;"></a>
+		</div>
+
+		<a href="#" class="activelink navHover md:px-10">Back to top</a>
+	</footer>
+</div>
+</body>
+</html>
