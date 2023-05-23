@@ -8,6 +8,20 @@
 
 * {font-family: "Montserrat";}
 
+@keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+}
+.blinking-cursor {
+    color: black;
+    animation: 1s blink step-end infinite;
+    animation-iteration-count: infinite;
+}
+
 .inputs {
 	margin-bottom: 1.25rem;
 	width: 100%;
