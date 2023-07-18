@@ -35,6 +35,11 @@
 	border-style: solid;
 	border-width: 1px;
 	border-color: black;
+	transition: 0.3s ease-in-out;
+}
+
+.divOutline:hover{
+	box-shadow: 20px 20px #D9D9D9;
 }
 
 .education {
