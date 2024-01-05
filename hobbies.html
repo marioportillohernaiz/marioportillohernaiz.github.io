@@ -49,114 +49,183 @@
 
 <main>
 <div class="w-full mainColor">
-	<header class="py-5 flex items-stretch place-content-end p-10 navHover  max-md:pr-1">
-		<div id="hamburger-icon" onclick="toggleMobileMenu(this)" class="pr-10">
-			<div class="bar1"></div>
-			<div class="bar2"></div>
-			<div class="bar3"></div>
-			<ul class="mobile-menu"	>
-				<li class="py-4"><a href="index.html">Home</a></li>
-				<li class="py-4"><a href="experience.html">Experience and Education</a></li>
-				<li class="py-4"><a href="achievement.html">Achievements</a></li>
-				<li class="py-4"><a href="#">Hobbies</a></li>
-				<li class="py-4"><a href="CV Mario Portillo Hernaiz.pdf" target="_blank">CV</a></li>
-			</ul>
-		</div>
-		<div class="navhide">
-			<a href="index.html" class="px-4">Home</a>
-			<a href="experience.html" class="px-4">Experience and Education</a>
-			<a href="achievement.html" class="px-4">Achievements</a>
-			<a href="#" class="px-4 activelink">Hobbies</a>
-			<a href="CV Mario Portillo Hernaiz.pdf" class="px-4" target="_blank">CV</a>
-		</div>
-		<script>
-			function toggleMobileMenu(menu) {
-				menu.classList.toggle('open');
-			}
-		</script>
-	</header>
+	<div style="max-width: 1500px; margin-left: auto; margin-right: auto;">
+		<header class="py-5 flex items-stretch place-content-end p-10 navHover  max-md:pr-1">
+			<div id="hamburger-icon" onclick="toggleMobileMenu(this)" class="pr-10">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+				<ul class="mobile-menu"	>
+					<li class="py-4"><a href="index.html">Home</a></li>
+					<li class="py-4"><a href="experience.html">Experience and Education</a></li>
+					<li class="py-4"><a href="achievement.html">Achievements</a></li>
+					<li class="py-4"><a href="#">Hobbies</a></li>
+					<li class="py-4"><a href="CV Mario Portillo Hernaiz.pdf" target="_blank">CV</a></li>
+				</ul>
+			</div>
+			<div class="navhide">
+				<a href="index.html" class="px-4">Home</a>
+				<a href="experience.html" class="px-4">Experience and Education</a>
+				<a href="achievement.html" class="px-4">Achievements</a>
+				<a href="#" class="px-4 activelink">Hobbies</a>
+				<a href="CV Mario Portillo Hernaiz.pdf" class="px-4" target="_blank">CV</a>
+			</div>
+			<script>
+				function toggleMobileMenu(menu) {
+					menu.classList.toggle('open');
+				}
+			</script>
+		</header>
+	</div>
 </div>
 
 <div class="w-ful mainColor">
-	<div class="grid grid-cols-1 md:grid-cols-3">
-		<div class="px-5 flex-1">
-			<img class="pageImg" src="img/hobb.png" style="width:220px;">
-		</div>
-		<div class="px-5 flex-1 col-span-2 flex pageTitle">
-			<h1 class="text-5xl font-bold tracking-wide">Hobbies</h1>
+	<div style="max-width: 1500px; margin-left: auto; margin-right: auto;">
+		<div class="grid grid-cols-1 md:grid-cols-3">
+			<div class="px-5 flex-1">
+				<img class="pageImg" src="img/hobb.png" style="width:220px;">
+			</div>
+			<div class="px-5 flex-1 col-span-2 flex pageTitle">
+				<h1 class="text-5xl font-bold tracking-wide">Hobbies</h1>
+			</div>
 		</div>
 	</div>
 </div>
 
 
 <div class="w-ful secColor max-md:p-3 md:p-10 ">
-	<div class="divOutline education">
-		<p class="text-2xl flex-1 font-bold pb-3">"Marcus RG"</p>
-		<p>Marcus RG is my photography/filmmaking name. A few years ago, 
-		I started taking photos and videos for fun. After a few years of practice, my skills in photography and videography improved. Since then, I've been able 
-		to meet incredible people and collaborate with them by helping them create content or build up their protfolio more professionally. Additionally, I create
-		my own content either on <a href="https://www.youtube.com/channel/UC8gLkUD9lFQMcxHmzY_A4-Q" target="_blank">YouTube</a> or 
-		<a href="https://www.instagram.com/marcus_rg_" target="_blank">Instagram</a>.</p>
-	</div>
+	<div style="max-width: 1500px; margin-left: auto; margin-right: auto;">
+		<div class="divOutline education">
+			<p class="text-2xl flex-1 font-bold pb-3">"Marcus RG"</p>
+			<p>Marcus RG is my photography/filmmaking name. A few years ago, 
+			I started taking photos and videos for fun. After a few years of practice, my skills in photography and videography improved. Since then, I've been able 
+			to meet incredible people and collaborate with them by helping them create content or build up their protfolio more professionally. Additionally, I create
+			my own content either on <a href="https://www.youtube.com/channel/UC8gLkUD9lFQMcxHmzY_A4-Q" target="_blank">YouTube</a> or 
+			<a href="https://www.instagram.com/marcus_rg_" target="_blank">Instagram</a>.</p>
+		</div>
 
-	<div class="flex flex-wrap">
-		<div class="flex-1 hobbies mainColor hoverButt" onclick="displayphoto()">
-			<p class="text-center text-2xl font-bold">Photography</p>
+		<div class="flex flex-wrap">
+			<div class="flex-1 hobbies mainColor hoverButt" onclick="displayphoto()">
+				<p class="text-center text-2xl font-bold">Photography</p>
+			</div>
+			<div class="flex-1 hobbies mainColor hoverButt" onclick="displayvideo()">
+				<p class="text-center text-2xl font-bold">Videography</p>
+			</div>
 		</div>
-		<div class="flex-1 hobbies mainColor hoverButt" onclick="displayvideo()">
-			<p class="text-center text-2xl font-bold">Videography</p>
-		</div>
-	</div>
-	
-	
-	<div id="photo" style="display:none;">
-		<div class="grid grid-cols-1 md:grid-cols-3 gap-3">
 		
-			<div class="divOutline flex-1" style="margin: 10px 10px;padding: 20px;">
-				<p class="text-center text-xl mb-4">Portrait Photography</p>
-				<div id="marcusPhoto">
-					<img src="img/photo1.png" class="w-full Sirv hobbyImg1" height=auto>
-					<a href="https://www.instagram.com/p/CkBglf9MzPA/?utm_source=ig_web_copy_link" target="_blank"></a><img src="img/photo12.png" class="Sirv hobbyImg2 w-full" height=auto></a>
+		
+		<div id="photo" style="display:none;">
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+			
+				<div class="divOutline flex-1" style="margin: 10px 10px;padding: 20px;">
+					<p class="text-center text-xl mb-4">Portrait Photography</p>
+						
+					<div id="portraitPhoto" class="carousel slide relative" data-bs-ride="carousel">
+						<div class="carousel-inner relative w-full overflow-hidden">
+							<div class="carousel-item active relative float-left w-full">
+								<a href="https://www.instagram.com/p/CkBglf9MzPA/?utm_source=ig_web_copy_link" target="_blank"><img src="img/photo1.png" class="block w-full" width=40% height=auto></a>
+							</div>
+							<div class="carousel-item relative float-left w-full">
+								<img src="img/photo11.jpg" class="block w-full" width=40% height=auto>
+							</div>
+							<div class="carousel-item relative float-left w-full">
+								<img src="img/photo12.png" class="block w-full" width=40% height=auto>
+							</div>
+						</div>
+					
+						<button class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+							type="button" data-bs-target="#portraitPhoto" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+							
+						<button class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0" 
+							type="button" data-bs-target="#portraitPhoto" data-bs-slide="next">
+							<span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+					<p class="mb-1 mt-4">My main photography area involves taking portrait pictures of people for them to use on their professional accounts, such as LinkedIn.</p>
 				</div>
-				<p class="mb-1 mt-4">My main photography area involves taking portrait pictures of people for them to use on their professional accounts, such as LinkedIn.</p>
-			</div>
-
-			<div class="divOutline flex-1" style="margin: 10px 10px;padding: 20px;">
-				<p class="text-center text-xl mb-4">Product Photography</p>
-				<div id="marcusPhoto">
-					<img src="img/photo2.png" class="Sirv hobbyImg2 w-full" height=auto>
-					<a href="https://www.instagram.com/p/ClKQCd9sY4R/?utm_source=ig_web_copy_link" target="_blank"><img src="img/photo22.png" class="w-full Sirv hobbyImg1" height=auto></a>
+				
+				<div class="divOutline flex-1" style="margin: 10px 10px;padding: 20px;">
+					<p class="text-center text-xl mb-4">Product Photography</p>
+						
+					<div id="productPhoto" class="carousel slide relative" data-bs-ride="carousel">
+						<div class="carousel-inner relative w-full overflow-hidden">
+							<div class="carousel-item active relative float-left w-full">
+								<a href="https://www.instagram.com/p/CkDsRwhMFKW/?utm_source=ig_web_copy_link" target="_blank"><img src="img/photo2.png" width=100% height=auto></a>
+							</div>
+							<div class="carousel-item relative float-left w-full">
+								<a href="https://www.instagram.com/p/CkDsRwhMFKW/?utm_source=ig_web_copy_link" target="_blank"><img src="img/photo21.jpg" width=100% height=auto></a>
+							</div>
+							<div class="carousel-item relative float-left w-full">
+								<a href="https://www.instagram.com/p/ClKQCd9sY4R/?utm_source=ig_web_copy_link" target="_blank"><img src="img/photo22.png" width=100% height=auto></a>
+							</div>
+						</div>
+						<button class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+							type="button" data-bs-target="#productPhoto" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+							
+						<button class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0" 
+							type="button" data-bs-target="#productPhoto" data-bs-slide="next">
+							<span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+						
+					<p class="mb-1 mt-4">From time to time I get the opportunity to take pictures of products which are then advertised on the company's social media.</p>
 				</div>
-				<p class="mb-1 mt-4">From time to time I get the opportunity to take pictures of products which are then advertised on the company's social media.</p>
-			</div>
-
-			<div class="divOutline flex-1" style="margin: 10px 10px;padding: 20px;">
-				<p class="text-center text-xl mb-4">Portrait Photography</p>
-				<div id="marcusPhoto">
-					<img src="img/photo3.png" class="w-full Sirv hobbyImg1" height=auto>
-					<a href="https://www.instagram.com/p/Ckvpucxs6lS/?utm_source=ig_web_copy_link" target="_blank"></a><img src="img/photo31.jpg" class="Sirv hobbyImg2 w-full" height=auto></a>
+				
+				<div class="divOutline flex-1" style="margin: 10px 10px;padding: 20px;">
+					<p class="text-center text-xl mb-4">Other</p>
+						
+					<div id="otherPhoto" class="carousel slide relative" data-bs-ride="carousel">
+						<div class="carousel-inner relative w-full overflow-hidden">
+							<div class="carousel-item active relative float-left w-full">
+								<a href="https://open.spotify.com/artist/1SUBvlAyHAit8nUNONyLYH?si=Rc2hWMKAQGSZuarQ_q9xRw" target="_blank"><img src="img/photo3.png" width=100% height=auto></a>
+							</div>
+							<div class="carousel-item relative float-left w-full">
+								<a href="https://www.instagram.com/p/Ckvpucxs6lS/?utm_source=ig_web_copy_link" target="_blank"><img src="img/photo31.jpg" width=100% height=auto></a>
+							</div>
+						</div>
+						<button class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+							type="button" data-bs-target="#otherPhoto" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+							
+						<button class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0" 
+							type="button" data-bs-target="#otherPhoto" data-bs-slide="next">
+							<span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+						
+					</div>
+						<p class="mb-1 mt-4">Other photography shoots that I've collaborated in include Nightclub photography or building up the portfolio of small known singers.</p>
 				</div>
-				<p class="mb-1 mt-4">Other photography shoots that I've collaborated in include Nightclub photography or building up the portfolio of small known singers.</p>
 			</div>
 		</div>
-	</div>
 
 
-	<div id="video" style="display:none;">
-		<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-			<div class="divOutline flex-1" style="margin: 10px 10px;padding: 20px;">
-				<p class="text-center text-xl mb-4">Personal Films</p>
-				<a href="https://www.youtube.com/@marcusrg4149" target="_blank"><img src="img/video1.jpg" width=100% height=auto></a>
-				<p class="mb-1 mt-4">In my free time, I usually work on recording and editing videos of anything which I can create a 
-					movie out of. For example, the video above was produced during my quarantine about a drawing I drew. In the future, 
-					I wish to create videos about the technology I create, such as my voice-recognition AI project; “OTTO”.</p>
-			</div>
-			<div class="divOutline flex-1" style="margin: 10px 10px;padding: 20px;">
-				<p class="text-center text-xl mb-4">Customer Films</p>
-				<a href="https://youtu.be/KX3yup43_aE" target="_blank"><img src="img/video2.jpg" width=100% height=auto></a>
-				<p class="mb-1 mt-4">A friend of mine was looking to create a video about her spoken poetry. At the time I was just starting 
-					to create videos professionally, for that reason I decided to give it a shot. Even with the lack of resources and 
-					knowledge in the filming industry I was able to create an acceptable film.</p>
+		<div id="video" style="display:none;">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+				<div class="divOutline flex-1" style="margin: 10px 10px;padding: 20px;">
+					<p class="text-center text-xl mb-4">Personal Films</p>
+					<a href="https://youtu.be/uDR9ONZ6QqA" target="_blank"><img src="img/video1.jpg" width=100% height=auto></a>
+					<p class="mb-1 mt-4">In my free time, I usually work on recording and editing videos of anything which I can create a 
+						movie out of. For example, the video above was produced during my quarantine about a drawing I drew. In the future, 
+						I wish to create videos about the technology I create, such as my voice-recognition AI project; “OTTO”.</p>
+				</div>
+				<div class="divOutline flex-1" style="margin: 10px 10px;padding: 20px;">
+					<p class="text-center text-xl mb-4">Customer Films</p>
+					<a href="https://youtu.be/KX3yup43_aE" target="_blank"><img src="img/video2.jpg" width=100% height=auto></a>
+					<p class="mb-1 mt-4">A friend of mine was looking to create a video about her spoken poetry. At the time I was just starting 
+						to create videos professionally, for that reason I decided to give it a shot. Even with the lack of resources and 
+						knowledge in the filming industry I was able to create an acceptable film.</p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -198,14 +267,16 @@
 </script>
 
 <div class="w-ful mainColor">
-	<footer class="flex justify-between p-5 navHover">
-		<div class="inline-flex md:px-10">
-			<a href="https://www.linkedin.com/in/marioportillohernaiz/" target="blank"><img class="mr-4" src="img/linkedinicon.png" style="width:40px;height:auto;"></a>
-			<a href="https://github.com/marioportillohernaiz" target="_blank"><img src="img/githubicon.png" style="width:40px;height:auto;"></a>
-		</div>
+	<div style="max-width: 1500px; margin-left: auto; margin-right: auto;">
+		<footer class="flex justify-between p-5 navHover">
+			<div class="inline-flex md:px-10">
+				<a href="https://www.linkedin.com/in/marioportillohernaiz/" target="blank"><img class="mr-4" src="img/linkedinicon.png" style="width:40px;height:auto;"></a>
+				<a href="https://github.com/marioportillohernaiz" target="_blank"><img src="img/githubicon.png" style="width:40px;height:auto;"></a>
+			</div>
 
-		<a href="#" class="activelink navHover md:px-10">Back to top</a>
-	</footer>
+			<a href="#" class="activelink navHover md:px-10">Back to top</a>
+		</footer>
+	</div>
 </div>
 </body>
 </html>
