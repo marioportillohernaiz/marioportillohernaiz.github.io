@@ -34,205 +34,211 @@
 <body class="separateContent"> 
 <main>
 <div class="w-full mainColor">
-	<header class="py-5 flex items-stretch place-content-end p-10 navHover  max-md:pr-1">
-		<div id="hamburger-icon" onclick="toggleMobileMenu(this)" class="pr-10">
-			<div class="bar1"></div>
-			<div class="bar2"></div>
-			<div class="bar3"></div>
-			<ul class="mobile-menu">
-				<li class="py-4"><a href="index.html">Home</a></li>
-				<li class="py-4"><a href="experience.html">Experience and Education</a></li>
-				<li class="py-4"><a href="#">Achievements</a></li>
-				<li class="py-4"><a href="hobbies.html">Hobbies</a></li>
-				<li class="py-4"><a href="CV Mario Portillo Hernaiz.pdf" target="_blank">CV</a></li>
-			</ul>
-		</div>
-		<div class="navhide">
-			<a href="index.html" class="px-4">Home</a>
-			<a href="experience.html" class="px-4">Experience and Education</a>
-			<a href="#" class="px-4 activelink">Achievements</a>
-			<a href="hobbies.html" class="px-4">Hobbies</a>
-			<a href="CV Mario Portillo Hernaiz.pdf" class="px-4" target="_blank">CV</a>
-		</div>
-		<script>
-			function toggleMobileMenu(menu) {
-				menu.classList.toggle('open');
-			}
-		</script>
-	</header>
+	<div style="max-width: 1500px; margin-left: auto; margin-right: auto;">
+		<header class="py-5 flex items-stretch place-content-end p-10 navHover  max-md:pr-1">
+			<div id="hamburger-icon" onclick="toggleMobileMenu(this)" class="pr-10">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+				<ul class="mobile-menu">
+					<li class="py-4"><a href="index.html">Home</a></li>
+					<li class="py-4"><a href="experience.html">Experience and Education</a></li>
+					<li class="py-4"><a href="#">Achievements</a></li>
+					<li class="py-4"><a href="hobbies.html">Hobbies</a></li>
+					<li class="py-4"><a href="CV Mario Portillo Hernaiz.pdf" target="_blank">CV</a></li>
+				</ul>
+			</div>
+			<div class="navhide">
+				<a href="index.html" class="px-4">Home</a>
+				<a href="experience.html" class="px-4">Experience and Education</a>
+				<a href="#" class="px-4 activelink">Achievements</a>
+				<a href="hobbies.html" class="px-4">Hobbies</a>
+				<a href="CV Mario Portillo Hernaiz.pdf" class="px-4" target="_blank">CV</a>
+			</div>
+			<script>
+				function toggleMobileMenu(menu) {
+					menu.classList.toggle('open');
+				}
+			</script>
+		</header>
+	</div>
 </div>
 
 <div class="w-ful mainColor">
-	<div class="grid grid-cols-1 md:grid-cols-3">
-		<div class="px-5 flex-1">
-			<img class="pageImg" src="img/achive.png" style="width:200px;">
+	<div style="max-width: 1500px; margin-left: auto; margin-right: auto;">
+		<div class="grid grid-cols-1 md:grid-cols-3">
+			<div class="px-5 flex-1">
+				<img class="pageImg" src="img/achive.png" style="width:200px;">
+			</div>
+			<div class="px-5 flex-1 col-span-2 flex pageTitle">
+				<h1 class="max-md:text-4xl md:text-5xl font-bold tracking-wide">Achievements</h1>
+			</div>
 		</div>
-		<div class="px-5 flex-1 col-span-2 flex pageTitle">
-			<h1 class="max-md:text-4xl md:text-5xl font-bold tracking-wide">Achievements</h1>
+		
+		<div class="flex items-center justify-center py-4 navHover">
+			<button class="px-5 activelink" id="proButton" onclick="displayData('1')">Projects</button>
+			<button class="px-5" id="achiButton" onclick="displayData('2')">Achieved Positions</button>
+			<button class="px-5" id="othButton" onclick="displayData('3')">Other Achivements</button>
 		</div>
-	</div>
-	
-	<div class="flex items-center justify-center py-4 navHover">
-		<button class="px-5 activelink" id="proButton" onclick="displayData('1')">Projects</button>
-		<button class="px-5" id="achiButton" onclick="displayData('2')">Achieved Positions</button>
-		<button class="px-5" id="othButton" onclick="displayData('3')">Other Achivements</button>
 	</div>
 </div>
 
 <div class="w-ful secColor">
-	<div id="project" style="display:block;" class="md:p-10">
-	
-	<p class="divTitle font-bold max-md:pt-5" style="margin-left:30px;">Personal Projects</p>
-	<div class="grid md:grid-cols-3">
-		<div class="divOutline flex-1 projects">
-			<p class="divTitle font-bold">Voice Recognition AI</p>
-			<p class="font-bold mt-2">C++</p>
-			<p class="my-2 text-sm">Created my own voice recognition AI using an open-source hardware platform called "Arduino UNO". This piece
-				of hardware recieved a voice input through a microphone and outputted a reply through a set of speakers. I named it "OTTO".</p>
-			<a href="https://github.com/marioportillohernaiz/Voice-Recognition-Assistant-AI" target="_blank" class="activelink">Project</a>
+	<div style="max-width: 1500px; margin-left: auto; margin-right: auto;">
+		<div id="project" style="display:block;" class="md:p-10">
+		
+			<p class="divTitle font-bold max-md:pt-5" style="margin-left:30px;">Personal Projects</p>
+			<div class="grid md:grid-cols-3">
+				<div class="divOutline flex-1 projects">
+					<p class="divTitle font-bold">Voice Recognition AI</p>
+					<p class="font-bold mt-2">C++</p>
+					<p class="my-2 text-sm">Created my own voice recognition AI using an open-source hardware platform called "Arduino UNO". This piece
+						of hardware recieved a voice input through a microphone and outputted a reply through a set of speakers. I named it "OTTO".</p>
+					<a href="https://github.com/marioportillohernaiz/Voice-Recognition-Assistant-AI" target="_blank" class="activelink">Project</a>
+				</div>
+				<div class="divOutline flex-1 projects">
+					<p class="divTitle font-bold">Personal Website</p>
+					<p class="font-bold mt-2">HTML/CSS/JavaScript</p>
+					<p class="my-2 text-sm">My personal website where I plan on updating with future projects and experiences.</p>
+					<a href="https://github.com/marioportillohernaiz/marioportillohernaiz.github.io" target="_blank" class="activelink navHover">Project</a>
+				</div>
+				<div class="divOutline flex-1 projects">
+					<p class="divTitle font-bold">Arduino Radar</p>
+					<p class="font-bold mt-2">C++</p>
+					<p class="my-2 text-sm">Created a Radar using Arduino, an ultrasonic sensor, a rotating motor, and a software sketchbook, along with the help 
+						of a few tutorials.</p>
+					<a href="https://github.com/marioportillohernaiz/Arduino-Radar" target="_blank" class="activelink navHover">Project</a>
+				</div>
+			</div>
+			
+			<p class="divTitle font-bold" style="margin-left:30px;">University Related Projects</p>
+			<div class="grid md:grid-cols-3">
+				<div class="divOutline flex-1 projects">
+					<p class="divTitle font-bold">Embedded System on Arduino</p>
+					<p class="font-bold mt-2">C++/C#</p>
+					<p class="my-2 text-sm">Consisted on programming an embedded system to save and display a set on channels on a LCD display. Had to play around with
+						ROM in order to save data in the most optimal way since the memory size was small.</p>
+					<a href="https://github.com/marioportillohernaiz/Embedded-Arduino-CW2022.git" target="_blank" class="activelink">Coursework</a>
+				</div>
+				<div class="divOutline flex-1 projects">
+					<p class="divTitle font-bold">Team Project</p>
+					<p class="font-bold mt-2">HTML/ CSS/ PHP/ SQL/ JavaScript</p>
+					<p class="my-2 text-sm">Worked in a diverse team of 6 students for the creation of a productivity and management system website. Like in the real 
+					world, we communicated with the client daily and used the Agile Scrum methodology to get the functionality and teamwork we needed.</p>
+					<a href="https://github.com/Team12-lboro" target="_blank" class="activelink">Coursework</a>
+				</div>
+				<div class="divOutline flex-1 projects">
+					<p class="divTitle font-bold">Neural Network - ANN</p>
+					<p class="font-bold mt-2">Java - <i>AI</i></p>
+					<p class="my-2 text-sm">The Artificial Neural Network - specifically a Multi-Layer Perceptron (MLP) - was trained using Backpropagation. In this project, I 
+						pre-processed data, implemented an algorithm, trained and selected the network, evaluated the model and compared it with another model.</p>
+					<a href="https://github.com/marioportillohernaiz/Neural-Network-ANN" target="_blank" class="activelink">Coursework</a>
+				</div>
+			</div>
+			
+			<div class="grid md:grid-cols-3">
+				<div class="divOutline flex-1 projects">
+					<p class="divTitle font-bold">Money Management App</p>
+					<p class="font-bold mt-2">Java</p>
+					<p class="my-2 text-sm">Simple and efficient money management app where groceries are grouped, allowing quick input and good visualizations.</p>
+					<a href="https://github.com/marioportillohernaiz/Spend-Saver" target="_blank" class="activelink">Coursework</a>
+				</div>
+				<div class="divOutline flex-1 projects">
+					<p class="divTitle font-bold">Library Management System</p>
+					<p class="font-bold mt-2">Python</p>
+					<p class="my-2 text-sm">Library management system which uploaded, ordered, displayed and created a ranking of books. Developed using tkinter user interface.</p>
+					<a href="https://github.com/marioportillohernaiz/Library-Management-System-CW2021.git" target="_blank" class="activelink">Coursework</a>
+				</div>
+				<div class="divOutline flex-1 projects">
+					<p class="divTitle font-bold">Computer Accessory Shop</p>
+					<p class="font-bold mt-2">Java - <i>Object-Oriented Program</i></p>
+					<p class="my-2 text-sm">Computer Accessory Shop which handled a (made-up) business shop's activity. It listed items which 
+					let users add to basket and buy them.</p>
+					<a href="https://github.com/marioportillohernaiz/Object-Oriented-Programming-CW2022.git" target="_blank" class="activelink">Coursework</a>
+				</div>
+			</div>
+			<div class="grid md:grid-cols-3">
+				<div class="divOutline flex-1 projects">
+					<p class="divTitle font-bold">Wedding Venue Booking Site</p>
+					<p class="font-bold mt-2">HTML/ CSS/ PHP/ SQL/ JavaScript</p>
+					<p class="my-2 text-sm">A website which finds a suitable wedding venue based on different inputs. Data was retrieved from a SQL database.</p>
+					<a href="https://github.com/marioportillohernaiz/Web-Programming-CW2022.git" target="_blank" class="activelink">Coursework</a>
+				</div>
+				<div class="divOutline flex-1 projects">
+					<p class="divTitle font-bold">Haskell CW</p>
+					<p class="font-bold mt-2">Haskell</p>
+					<p class="my-2 text-sm">Coursework consisted of solving 5 programming questions. The level of difficulty increased with the questions.</p>
+					<a href="https://github.com/marioportillohernaiz/Haskell-CW2021.git" target="_blank" class="activelink navHover">Coursework</a>
+				</div>
+				<div class="flex-1 projects"></div>
+			</div>
 		</div>
-		<div class="divOutline flex-1 projects">
-			<p class="divTitle font-bold">Personal Website</p>
-			<p class="font-bold mt-2">HTML/CSS/JavaScript</p>
-			<p class="my-2 text-sm">My personal website where I plan on updating with future projects and experiences.</p>
-			<a href="https://github.com/marioportillohernaiz/marioportillohernaiz.github.io" target="_blank" class="activelink navHover">Project</a>
-		</div>
-		<div class="divOutline flex-1 projects">
-			<p class="divTitle font-bold">Arduino Radar</p>
-			<p class="font-bold mt-2">C++</p>
-			<p class="my-2 text-sm">Created a Radar using Arduino, an ultrasonic sensor, a rotating motor, and a software sketchbook, along with the help 
-				of a few tutorials.</p>
-			<a href="https://github.com/marioportillohernaiz/Arduino-Radar" target="_blank" class="activelink navHover">Project</a>
-		</div>
-	</div>
-	
-	<p class="divTitle font-bold" style="margin-left:30px;">University Related Projects</p>
-	<div class="grid md:grid-cols-3">
-		<div class="divOutline flex-1 projects">
-			<p class="divTitle font-bold">Embedded System on Arduino</p>
-			<p class="font-bold mt-2">C++/C#</p>
-			<p class="my-2 text-sm">Consisted on programming an embedded system to save and display a set on channels on a LCD display. Had to play around with
-				ROM in order to save data in the most optimal way since the memory size was small.</p>
-			<a href="https://github.com/marioportillohernaiz/Embedded-Arduino-CW2022.git" target="_blank" class="activelink">Coursework</a>
-		</div>
-		<div class="divOutline flex-1 projects">
-			<p class="divTitle font-bold">Team Project</p>
-			<p class="font-bold mt-2">HTML/ CSS/ PHP/ SQL/ JavaScript</p>
-			<p class="my-2 text-sm">Worked in a diverse team of 6 students for the creation of a productivity and management system website. Like in the real 
-			world, we communicated with the client daily and used the Agile Scrum methodology to get the functionality and teamwork we needed.</p>
-			<a href="https://github.com/Team12-lboro" target="_blank" class="activelink">Coursework</a>
-		</div>
-		<div class="divOutline flex-1 projects">
-			<p class="divTitle font-bold">Neural Network - ANN</p>
-			<p class="font-bold mt-2">Java - <i>AI</i></p>
-			<p class="my-2 text-sm">The Artificial Neural Network - specifically a Multi-Layer Perceptron (MLP) - was trained using Backpropagation. In this project, I 
-				pre-processed data, implemented an algorithm, trained and selected the network, evaluated the model and compared it with another model.</p>
-			<a href="https://github.com/marioportillohernaiz/Neural-Network-ANN" target="_blank" class="activelink">Coursework</a>
-		</div>
-	</div>
-	
-	<div class="grid md:grid-cols-3">
-		<div class="divOutline flex-1 projects">
-			<p class="divTitle font-bold">Money Management App</p>
-			<p class="font-bold mt-2">Java</p>
-			<p class="my-2 text-sm">Simple and efficient money management app where groceries are grouped, allowing quick input and good visualizations.</p>
-			<a href="https://github.com/marioportillohernaiz/Spend-Saver" target="_blank" class="activelink">Coursework</a>
-		</div>
-		<div class="divOutline flex-1 projects">
-			<p class="divTitle font-bold">Library Management System</p>
-			<p class="font-bold mt-2">Python</p>
-			<p class="my-2 text-sm">Library management system which uploaded, ordered, displayed and created a ranking of books. Developed using tkinter user interface.</p>
-			<a href="https://github.com/marioportillohernaiz/Library-Management-System-CW2021.git" target="_blank" class="activelink">Coursework</a>
-		</div>
-		<div class="divOutline flex-1 projects">
-			<p class="divTitle font-bold">Computer Accessory Shop</p>
-			<p class="font-bold mt-2">Java - <i>Object-Oriented Program</i></p>
-			<p class="my-2 text-sm">Computer Accessory Shop which handled a (made-up) business shop's activity. It listed items which 
-			let users add to basket and buy them.</p>
-			<a href="https://github.com/marioportillohernaiz/Object-Oriented-Programming-CW2022.git" target="_blank" class="activelink">Coursework</a>
-		</div>
-	</div>
-	<div class="grid md:grid-cols-3">
-		<div class="divOutline flex-1 projects">
-			<p class="divTitle font-bold">Wedding Venue Booking Site</p>
-			<p class="font-bold mt-2">HTML/ CSS/ PHP/ SQL/ JavaScript</p>
-			<p class="my-2 text-sm">A website which finds a suitable wedding venue based on different inputs. Data was retrieved from a SQL database.</p>
-			<a href="https://github.com/marioportillohernaiz/Web-Programming-CW2022.git" target="_blank" class="activelink">Coursework</a>
-		</div>
-		<div class="divOutline flex-1 projects">
-			<p class="divTitle font-bold">Haskell CW</p>
-			<p class="font-bold mt-2">Haskell</p>
-			<p class="my-2 text-sm">Coursework consisted of solving 5 programming questions. The level of difficulty increased with the questions.</p>
-			<a href="https://github.com/marioportillohernaiz/Haskell-CW2021.git" target="_blank" class="activelink navHover">Coursework</a>
-		</div>
-		<div class="flex-1 projects"></div>
-	</div>
-	</div>
-</div>
 
 
-<div id="positions" style="display:none;" class="md:p-10">
-	<div class="divOutline education">
-		<div class="flex">
-			<p class="divTitle flex-1 font-bold">Media Coordinator</p>
-			<p class="flex-1 max-md:text-right">2022-Present</p>
+		<div id="positions" style="display:none;" class="md:p-10">
+			<div class="divOutline education">
+				<div class="flex">
+					<p class="divTitle flex-1 font-bold">Media Coordinator</p>
+					<p class="flex-1 max-md:text-right">2022-2023</p>
+				</div>
+				<p>Media Coordinator for the <i>Loughborough AU Kickboxing Team</i>.</p>
+				<p class="py-4">In this role, I am responsible for increasing the attraction of the club through its social media pages and 
+				keep them up to date. This is a big role as I have to take on the job of expanding the team and keeping a positive view 
+				of it. As part of this role I also have to be the team's photographer and videographer.</p>
+			</div>
+			<div class="divOutline education">
+				<div class="flex">
+					<p class="divTitle flex-1 font-bold">Social Student Involvement Officer</p>
+					<p class="flex-1 max-md:text-right">2022-2023</p>
+				</div>
+				<p>Social SIO (Student Involvement Officer) for the <i>Loughborough Computer Science department</i>.</p>
+				<p class="py-4">Responsible for creating and organising social activities and events for the Computer Science department. This 
+				also involves planning, budgeting and advertising future events. Some events that I organised or helped organise include an annual
+				CS pizza party, the CS Summer ball or a weekly Volleyball Tournament between students and Staff.</p>
+			</div>
+			<div class="divOutline education">	
+				<div class="flex">
+					<p class="divTitle flex-1 font-bold">Club Captain</p>
+					<p class="flex-1 max-md:text-right">2019-2021</p>
+				</div>
+				<p>Club Captain for the <i>Leander Swimming Club</i>.</p>
+				<p class="py-4">Being the Captain of the team I had the responsibility of becoming the "middle man" between the swimmer and the coach. 
+				This meant I had to make sure the swimmers did the work during their session and sometimes lead it when the coach was dealing 
+				with something else. Whenever a swimmer had doubt about a race or a session, I was also responsible of either giving them 
+				advice, or asking the coach for advice which I would then deliver it on.<p>
+			</div>
+			<div class="divOutline education">
+				<div class="flex">
+					<p class="divTitle flex-1 font-bold">Senior Prefect</p>
+					<p class="flex-1 max-md:text-right">2018-2019</p>
+				</div>
+				<p>Senior Prefect which represented one of the five houses in my <i>secondary school</i>.</p>
+				<p class="py-4">Had many responsibilities such as monitoring younger students, working as a librarian, tutoring Maths students and assisting 
+				with Open Days. During Open Days and other events I had to speak to and tour prospective students.</p>
+			</div>
 		</div>
-		<p>Media Coordinator for the <i>Loughborough AU Kickboxing Team</i>.</p>
-		<p class="py-4">In this role, I am responsible for increasing the attraction of the club through its social media pages and 
-		keep them up to date. This is a big role as I have to take on the job of expanding the team and keeping a positive view 
-		of it. As part of this role I also have to be the team's photographer and videographer.</p>
-	</div>
-	<div class="divOutline education">
-		<div class="flex">
-			<p class="divTitle flex-1 font-bold">Social Student Involvement Officer</p>
-			<p class="flex-1 max-md:text-right">2022-Present</p>
-		</div>
-		<p>Social SIO (Student Involvement Officer) for the <i>Loughborough Computer Science department</i>.</p>
-		<p class="py-4">Responsible for creating and organising social activities and events for the Computer Science department. This 
-		also involves planning, budgeting and advertising future events. Some events that I organised or helped organise include an annual
-		CS pizza party, the CS Summer ball or a weekly Volleyball Tournament between students and Staff.</p>
-	</div>
-	<div class="divOutline education">	
-		<div class="flex">
-			<p class="divTitle flex-1 font-bold">Club Captain</p>
-			<p class="flex-1 max-md:text-right">2019-2021</p>
-		</div>
-		<p>Club Captain for the <i>Leander Swimming Club</i>.</p>
-		<p class="py-4">Being the Captain of the team I had the responsibility of becoming the "middle man" between the swimmer and the coach. 
-		This meant I had to make sure the swimmers did the work during their session and sometimes lead it when the coach was dealing 
-		with something else. Whenever a swimmer had doubt about a race or a session, I was also responsible of either giving them 
-		advice, or asking the coach for advice which I would then deliver it on.<p>
-	</div>
-	<div class="divOutline education">
-		<div class="flex">
-			<p class="divTitle flex-1 font-bold">Senior Prefect</p>
-			<p class="flex-1 max-md:text-right">2018-2019</p>
-		</div>
-		<p>Senior Prefect which represented one of the five houses in my <i>secondary school</i>.</p>
-		<p class="py-4">Had many responsibilities such as monitoring younger students, working as a librarian, tutoring Maths students and assisting 
-		with Open Days. During Open Days and other events I had to speak to and tour prospective students.</p>
-	</div>
-</div>
 
 
-<div id="other" style="display:none;" class="md:p-10">
-	<div class="divOutline education">
-		<p class="divTitle pb-2 font-bold">Duke Of Edinburgh</p>
-		<p>Completed both Bronze and Gold awards. Both awards consisted of Volunteering between 3-12 months, completing a Physical activity 
-		for 6-18 months and taking part in a Skills activity for 3-12 months. In my Volunteering I volunteered as a Scout Leader for my Bronze
-		and an assistant teacher in maths for my Gold. For both Bronze's and Gold's Physical activity I swam certain hours a week. Finally 
-		my Skills activity consisted of volunteering as a librerian for my Bronze award and in a Robotics classroom for my Gold award, where 
-		I assisted the teacher in teaching students to understand robots. In order to complete these awards I took part in a 2 day walking 
-		expedition for my Bronze award and a 5 day expedition for my Gold.</p>
-	</div>
-	<div class="divOutline education">
-		<p class="divTitle pb-2 font-bold">London Youth Games 2019</p>
-		<p>Selected to swim and represent Lambeth Council in the 50meter Breastroke race winning 3rd place.</p>
-	</div>
-	<div class="divOutline education">
-		<p class="divTitle pb-2 font-bold">National Citizen Service</p>
-		<p>Worked with teammates from a diverse range of backgrounds to develop charity projects and learned to deliver speeches to large audiences 
-		on this program, which boosted my confidence, my social and communication skills.</p>
+		<div id="other" style="display:none;" class="md:p-10">
+			<div class="divOutline education">
+				<p class="divTitle pb-2 font-bold">Duke Of Edinburgh</p>
+				<p>Completed both Bronze and Gold awards. Both awards consisted of Volunteering between 3-12 months, completing a Physical activity 
+				for 6-18 months and taking part in a Skills activity for 3-12 months. In my Volunteering I volunteered as a Scout Leader for my Bronze
+				and an assistant teacher in maths for my Gold. For both Bronze's and Gold's Physical activity I swam certain hours a week. Finally 
+				my Skills activity consisted of volunteering as a librerian for my Bronze award and in a Robotics classroom for my Gold award, where 
+				I assisted the teacher in teaching students to understand robots. In order to complete these awards I took part in a 2 day walking 
+				expedition for my Bronze award and a 5 day expedition for my Gold.</p>
+			</div>
+			<div class="divOutline education">
+				<p class="divTitle pb-2 font-bold">London Youth Games 2019</p>
+				<p>Selected to swim and represent Lambeth Council in the 50meter Breastroke race winning 3rd place.</p>
+			</div>
+			<div class="divOutline education">
+				<p class="divTitle pb-2 font-bold">National Citizen Service</p>
+				<p>Worked with teammates from a diverse range of backgrounds to develop charity projects and learned to deliver speeches to large audiences 
+				on this program, which boosted my confidence, my social and communication skills.</p>
+			</div>
+		</div>
 	</div>
 </div>
 
@@ -271,14 +277,16 @@
 
 
 <div class="w-ful mainColor">
-	<footer class="flex justify-between p-5 navHover">
-		<div class="inline-flex md:px-10">
-			<a href="https://www.linkedin.com/in/marioportillohernaiz/" target="blank"><img class="mr-4" src="img/linkedinicon.png" style="width:40px;height:auto;"></a>
-			<a href="https://github.com/marioportillohernaiz" target="_blank"><img src="img/githubicon.png" style="width:40px;height:auto;"></a>
-		</div>
+	<div style="max-width: 1500px; margin-left: auto; margin-right: auto;">
+		<footer class="flex justify-between p-5 navHover">
+			<div class="inline-flex md:px-10">
+				<a href="https://www.linkedin.com/in/marioportillohernaiz/" target="blank"><img class="mr-4" src="img/linkedinicon.png" style="width:40px;height:auto;"></a>
+				<a href="https://github.com/marioportillohernaiz" target="_blank"><img src="img/githubicon.png" style="width:40px;height:auto;"></a>
+			</div>
 
-		<a href="#" class="activelink md:px-10">Back to top</a>
-	</footer>
+			<a href="#" class="activelink md:px-10">Back to top</a>
+		</footer>
+	</div>
 </div>
 </body>
 </html>
