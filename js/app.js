@@ -1,6 +1,6 @@
 
 function fetchJSONData() {
-    fetch("cocina.json")
+    fetch("./data/cocina.json")
         .then((res) => {
             if (!res.ok) {
                 throw new Error
